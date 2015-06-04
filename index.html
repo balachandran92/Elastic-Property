@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<title>Consumer Survey-eNalytics</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width:device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap.min.css">
+	</head>
+	<body>
+		<h3>Consumer Survey-eNalytics</h3>
+		<p>This form is the part of the research and survey program to understand the behavior of consumers post buying events. Through the set of questions asked in this survey, the aim is only to understand how satisfied the customer or consumer was after buying any product online or from B&M Store and how was the help available to him/her to understand, use, repair, replace the product after buying.</p>
+		<p>The buying experience is not limited to Buying from online shop, retail store or any B&M only, it can be buying a service, air ticket, Travel packs, mobile service.</p>
+		<p>* Required</p>
+		<form id="survey">
+			<p class="question">1. How many products did you buy in last 6 months (approx)? <span class="required">*</span></p>
+			<input type="text" id="question1" ng-model="question1">
+			<p class="question">2. How Many did you buy online? (approx) <span class="required">*</span></p>
+			<input type="text" id="question2" ng-model="question2">
+			<p class="question">3. How many times were you satisfied with the product after you started using the product at home: when purchased online? <span class="required">*</span></p>
+			<input type="text" id="question3" ng-model="question3">
+			<p class="question">4. How many times were you satisfied with the product after you started using the product at home: when purchased from retails or B&M Store? <span class="required">*</span></p>
+			<input type="text" id="question4" ng-model="question4">
+			<p class="question">5. How many times were you completely satisfied? <span class="required">*</span></p>
+			<ul class="choice-lists">
+				<li>
+					<input type="radio" class="option1" ng-model="option1">
+					<label>25%</label>
+				</li>
+				<li>
+					<input type="radio" class="option2" ng-model="option2">
+					<label>50%</label>
+				</li>
+				<li>
+					<input type="radio" class="option3" ng-model="option3">
+					<label>75%</label>
+				</li>
+				<li>
+					<input type="radio" class="option4" ng-model="option4">
+					<label>100%</label>
+				</li>
+				<input type = "submit" class="btn primary-btn submit" ng-model="submit">
+			</ul>
+		</form>
+		<script type="text/javascript" src="lib/js/angular.min.js"></script>
+	</body>
+</html>
